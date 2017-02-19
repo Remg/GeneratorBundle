@@ -1,0 +1,33 @@
+-
+    name: birthdate
+    type: date
+-
+    name: createdAt
+    type: datetime
+-
+    name: updatedAt
+    type: datetime
+-
+    name: time
+    type: time
+-
+    name: isActive
+    type: boolean
+-
+    name: enabled
+    type: boolean
+-
+    name: name
+    type: string
+-
+    name: content
+    type: string
+-
+    name: foo
+    type: string
+-
+    name: bar
+    type: string
+#-
+#    name: 
+#    type: 

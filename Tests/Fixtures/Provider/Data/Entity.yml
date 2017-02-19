@@ -1,0 +1,68 @@
+-
+    name:              AppBundle\Entity\Post
+    shortcut:          AppBundle:Post
+    namespace:         AppBundle\Entity
+    directory:         ~
+    shortName:         Post
+    translationKey:    post
+    routePrefix:       post
+    entityPath:        /tmp/sf/AppBundle/Entity/Post.php
+    bundleNamespace:   AppBundle
+    bundleName:        AppBundle
+    bundlePath:        /tmp/sf/AppBundle
+    format:            xml
+    configurationPath: /tmp/sf/AppBundle/Resources/config/doctrine/Post.orm.xml
+-
+    name:              App\BlogBundle\Entity\Post
+    shortcut:          AppBlogBundle:Post
+    namespace:         App\BlogBundle\Entity
+    directory:         ~
+    shortName:         Post
+    translationKey:    post
+    routePrefix:       post
+    entityPath:        /tmp/sf/App/BlogBundle/Entity/Post.php
+    bundleNamespace:   App\BlogBundle
+    bundleName:        AppBlogBundle
+    bundlePath:        /tmp/sf/App/BlogBundle
+    format:            yml
+    configurationPath: /tmp/sf/App/BlogBundle/Resources/config/doctrine/Post.orm.yml
+-
+    name:              Acme\DemoBundle\Entity\Blog\Post
+    shortcut:          AcmeDemoBundle:Blog\Post
+    namespace:         Acme\DemoBundle\Entity\Blog
+    directory:         Blog
+    shortName:         Post
+    translationKey:    blog.post
+    routePrefix:       blog_post
+    entityPath:        /tmp/sf/Acme/DemoBundle/Entity/Blog/Post.php
+    bundleNamespace:   Acme\DemoBundle
+    bundleName:        AcmeDemoBundle
+    bundlePath:        /tmp/sf/Acme/DemoBundle
+    format:            php
+    configurationPath: /tmp/sf/Acme/DemoBundle/Resources/config/doctrine/Blog.Post.orm.php
+-
+    name:              Remg\GeneratorBundle\Entity\Test
+    shortcut:          RemgGeneratorBundle:Test
+    namespace:         Remg\GeneratorBundle\Entity
+    directory:         ~
+    shortName:         Test
+    translationKey:    test
+    routePrefix:       test
+    entityPath:        /tmp/sf/vendor/remg/generator-bundle/Entity/Test.php
+    bundleNamespace:   Remg\GeneratorBundle
+    bundleName:        RemgGeneratorBundle
+    bundlePath:        /tmp/sf/vendor/remg/generator-bundle
+    format:            annotation
+    configurationPath: ~
+#-
+#    name:            
+#    shortcut:        
+#    namespace:       
+#    directory:       
+#    shortName:       
+#    translationKey:  
+#    routePrefix:     
+#    entityPath:      
+#    bundleNamespace: 
+#    bundleName:      
+#    bundlePath:      

@@ -1,0 +1,136 @@
+-
+    fieldName: name
+    type:      string
+    nullable:  false
+    unique:    true
+    length:    64
+    precision: ~
+    scale:     ~
+-
+    fieldName: title
+    type:      string
+    nullable:  false
+    unique:    true
+    length:    128
+    precision: ~
+    scale:     ~
+-
+    fieldName: url
+    type:      string
+    nullable:  false
+    unique:    true
+    length:    255
+    precision: ~
+    scale:     ~
+-
+    fieldName: slug
+    type:      string
+    nullable:  false
+    unique:    true
+    length:    255
+    precision: ~
+    scale:     ~
+-
+    fieldName: content
+    type:      text
+    nullable:  false
+    unique:    false
+    length:    ~
+    precision: ~
+    scale:     ~
+-
+    fieldName: description
+    type:      text
+    nullable:  true
+    unique:    false
+    length:    ~
+    precision: ~
+    scale:     ~
+-
+    fieldName: position
+    type:      integer
+    nullable:  true
+    unique:    true
+    length:    ~
+    precision: ~
+    scale:     ~
+-
+    fieldName: number
+    type:      decimal
+    nullable:  true
+    unique:    false
+    length:    ~
+    precision: 10
+    scale:     2
+-
+    fieldName: price
+    type:      decimal
+    nullable:  true
+    unique:    false
+    length:    ~
+    precision: 20
+    scale:     5
+-
+    fieldName: amount
+    type:      decimal
+    nullable:  true
+    unique:    false
+    length:    ~
+    precision: 15
+    scale:     4
+-
+    fieldName: date
+    type:      date
+    nullable:  false
+    unique:    false
+    length:    ~
+    precision: ~
+    scale:     ~
+-
+    fieldName: birthDate
+    type:      date
+    nullable:  false
+    unique:    false
+    length:    ~
+    precision: ~
+    scale:     ~
+-
+    fieldName: createdAt
+    type:      datetime
+    nullable:  true
+    unique:    false
+    length:    ~
+    precision: ~
+    scale:     ~
+-
+    fieldName: updatedAt
+    type:      datetime
+    nullable:  true
+    unique:    false
+    length:    ~
+    precision: ~
+    scale:     ~
+-
+    fieldName: hour
+    type:      time
+    nullable:  true
+    unique:    false
+    length:    ~
+    precision: ~
+    scale:     ~
+-
+    fieldName: time
+    type:      time
+    nullable:  true
+    unique:    false
+    length:    ~
+    precision: ~
+    scale:     ~
+#-
+#    fieldName: 
+#    type:      
+#    nullable:  
+#    unique:    
+#    length:    ~
+#    precision: ~
+#    scale:     ~

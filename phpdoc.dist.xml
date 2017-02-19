@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpdoc>
+    <title>RemgGeneratorBundle</title>
+    <parser>
+        <target>build/phpdoc</target>
+    </parser>
+    <transformer>
+        <target>build/phpdoc</target>
+    </transformer>
+    <transformations>
+        <template name="clean"/>
+    </transformations>
+    <files>
+        <files>*.php</files>
+        <directory>Command</directory>
+        <directory>DependencyInjection</directory>
+        <directory>Exception</directory>
+        <directory>Generator</directory>
+        <directory>Mapping</directory>
+        <directory>Model</directory>
+        <directory>Tests</directory>
+        <directory>Tools</directory>
+        <ignore>Tests/app/cache/*</ignore>
+        <ignore>Tests/app/logs/*</ignore>
+    </files>
+</phpdoc>

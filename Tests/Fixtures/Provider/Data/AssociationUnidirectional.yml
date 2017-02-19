@@ -1,0 +1,20 @@
+-
+    # OneToOne Unidirectional
+    fieldName:    profile
+    type:         OneToOne
+    targetEntity: UserBundle\Entity\Profile
+-
+    # OneToMany Unidirectional
+    fieldName:    comments
+    type:         OneToMany
+    targetEntity: AppBundle\Entity\Comment
+-
+    # ManyToOne Unidirectional
+    fieldName:    post
+    type:         ManyToOne
+    targetEntity: BlogBundle\Entity\Post
+-
+    # ManyToMany Unidirectional
+    fieldName:    groups
+    type:         ManyToMany
+    targetEntity: UserBundle\Entity\Groupe

@@ -1,0 +1,16 @@
+-
+    shortName:       Category
+    type:            ManyToOne
+    inverseProperty: categories
+-
+    shortName:       Tags
+    type:            ManyToMany
+    inverseProperty: tags
+-
+    shortName:       Author
+    type:            OneToMany
+    inverseProperty: author
+-
+    shortName:       Profile
+    type:            OneToOne
+    inverseProperty: profile

@@ -1,0 +1,6 @@
+phpunit.xml
+composer.lock
+vendor
+build
+/Tests/app/cache
+/Tests/app/logs

@@ -1,0 +1,12 @@
+-
+    input:    AppBundle\Entity\Delete
+    keyword:  Delete
+    platform: MySQL57
+-
+    input:    AppBundle\Entity\Select\Post
+    keyword:  Select
+    platform: MySQL57
+-
+    input:    Acme\DemoBundle\Entity\Blog\Collation
+    keyword:  Collation
+    platform: PostgreSQL92

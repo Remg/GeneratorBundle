@@ -1,0 +1,36 @@
+-
+    name:      AppBundle
+    namespace: AppBundle
+    path:      /tmp/sf/AppBundle
+-
+    name:      AppBlogBundle
+    namespace: App\BlogBundle
+    path:      /tmp/sf/App/BlogBundle
+-
+    name:      AppDemoBlogBundle
+    namespace: App\Demo\BlogBundle
+    path:      /tmp/sf/App/Demo/BlogBundle
+-
+    name:      FooBundle
+    namespace: FooBundle
+    path:      /tmp/sf/src/FooBundle
+-
+    name:      FooBarBundle
+    namespace: Foo\BarBundle
+    path:      /tmp/sf/src/Foo/BarBundle
+-
+    name:      BundleBundle
+    namespace: Bundle\Bundle
+    path:      /tmp/sf/Bundle/Bundle
+-
+    name:      AcmeDemoBundle
+    namespace: Acme\DemoBundle
+    path:      /tmp/sf/Acme/DemoBundle
+-
+    name:      RemgGeneratorBundle
+    namespace: Remg\GeneratorBundle
+    path:      /tmp/sf/vendor/remg/generator-bundle
+#-
+#    name:      
+#    namespace: 
+#    path:      

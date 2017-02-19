@@ -1,0 +1,42 @@
+-
+    input:   AppBundle\Entity\Echo
+    keyword: echo
+-
+    input:   AppBundle\Entity\Echo\Post
+    keyword: echo
+-
+    input:   Acme\DemoBundle\Entity\Class\Post
+    keyword: class
+-
+    input:   Acme\DemoBundle\Entity\Foreach\Comment
+    keyword: foreach
+-
+    input:   Remg\GeneratorBundle\Entity\Interface
+    keyword: interface
+-
+    input:   Foo\BarBundle\Entity\Namespace\Comment
+    keyword: namespace
+-
+    input:   Bar\FooBundle\Entity\Static
+    keyword: static
+-
+    input:   Symfony\FrameworkBundle\Entity\Trait\Console
+    keyword: trait
+-
+    input:   App\BlogBundle\Entity\List
+    keyword: list
+-
+    input:   App\DemoBundle\Entity\Print\Test
+    keyword: print
+-
+    input:   App\UserBundle\Entity\Include\Profile
+    keyword: include
+-
+    input:   App\CoreBundle\Entity\Require\Class
+    keyword: require
+-
+    input:   App\ExampleBundle\Entity\While\Test
+    keyword: while
+#-
+#    input:   
+#    keyword: 

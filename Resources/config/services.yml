@@ -1,0 +1,62 @@
+services:
+    # Bundle management
+    remg_generator.kernel_bundles:
+        class: Symfony\Component\HttpKernel\Kernel
+        factory: ["@kernel", getBundles]
+
+    remg_generator.bundle_manager:
+        class: Remg\GeneratorBundle\Tools\BundleManager
+        arguments:
+            - "@remg_generator.kernel_bundles"
+
+    # Mapping
+    remg_generator.classmetadata_factory:
+        class: Remg\GeneratorBundle\Mapping\ClassMetadataFactory
+        calls:
+            - [setEntityManager, ["@doctrine.orm.default_entity_manager"]]
+
+    remg_generator.entity_builder:
+        class: Remg\GeneratorBundle\Mapping\EntityBuilder
+
+    remg_generator.entity_factory:
+        class: Remg\GeneratorBundle\Mapping\EntityFactory
+        arguments: 
+            - "@doctrine.orm.default_entity_manager"
+            - "@remg_generator.bundle_manager"
+            - "@remg_generator.classmetadata_factory"
+            - "@remg_generator.entity_builder"
+
+    remg_generator.mapping_validator:
+        class: Remg\GeneratorBundle\Mapping\MappingValidator
+        arguments:
+            - "@remg_generator.entity_factory"
+
+    remg_generator.mapping_guesser:
+        class: Remg\GeneratorBundle\Mapping\MappingGuesser
+
+    # Helpers
+    remg_generator.mapping_helper:
+        abstract: true
+        arguments:
+            - "@remg_generator.mapping_validator"
+            - "@remg_generator.mapping_guesser"
+
+    remg_generator.entity_helper:
+        class: Remg\GeneratorBundle\Command\Helper\EntityHelper
+        parent: remg_generator.mapping_helper
+
+    remg_generator.field_helper:
+        class: Remg\GeneratorBundle\Command\Helper\FieldHelper
+        parent: remg_generator.mapping_helper
+
+    remg_generator.association_helper:
+        class: Remg\GeneratorBundle\Command\Helper\AssociationHelper
+        parent: remg_generator.mapping_helper
+
+    # Generators
+    remg_generator.entity_generator:
+        class: Remg\GeneratorBundle\Generator\EntityGenerator
+        arguments:
+            - "@remg_generator.classmetadata_factory"
+            - "%remg_generator.entity%"
+

@@ -1,0 +1,12 @@
+-
+    name:         comments
+    bundleName:   AppBundle
+    targetEntity: AppBundle:Comment
+-
+    name:         categories
+    bundleName:   AppBlogBundle
+    targetEntity: AppBlogBundle:Category
+#-
+#    name:        
+#    bundleName:  
+#    targetEntity:

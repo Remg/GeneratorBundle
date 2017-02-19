@@ -1,0 +1,57 @@
+-
+    owning:
+        # OneToOne Bidirectional owning side
+        fieldName:     user
+        type:          OneToOne
+        targetEntity:  UserBundle\Entity\User
+        bidirectional: true
+        owningSide:    true
+        mappedBy:      ~
+        inversedBy:    profile
+    inverse:
+        # OneToOne Bidirectional inverse side
+        fieldName:     profile
+        type:          OneToOne
+        targetEntity:  UserBundle\Entity\Profile
+        bidirectional: true
+        owningSide:    false
+        mappedBy:      user
+        inversedBy:    ~
+-
+    owning:
+        # ManyToOne Bidirectional owning side
+        fieldName:     post
+        type:          ManyToOne
+        targetEntity:  BlogBundle\Entity\Post
+        bidirectional: true
+        owningSide:    true
+        mappedBy:      ~
+        inversedBy:    comments
+    inverse:
+        # OneToMany Bidirectional inverse side
+        fieldName:     comments
+        type:          OneToMany
+        targetEntity:  BlogBundle\Entity\Comment
+        bidirectional: true
+        owningSide:    false
+        mappedBy:      post
+        inversedBy:    ~
+-
+    owning:
+        # ManyToMany Bidirectional owning side
+        fieldName:     categories
+        type:          ManyToMany
+        targetEntity:  AppBundle\Entity\Shop\Category
+        bidirectional: true
+        owningSide:    true
+        mappedBy:      ~
+        inversedBy:    tags
+    inverse:
+        # ManyToMany Bidirectional inverse side
+        fieldName:     tags
+        type:          ManyToMany
+        targetEntity:  AppBundle\Entity\Shop\Tags
+        bidirectional: true
+        owningSide:    false
+        mappedBy:      categories
+        inversedBy:    ~

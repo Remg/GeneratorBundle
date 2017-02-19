@@ -1,0 +1,16 @@
+-
+    input:      AppBundle:Post
+    fqcn:       AppBundle\Entity\Post
+    normalized: AppBundle\Entity\Post
+-
+    input:      appbundle:post
+    fqcn:       AppBundle\Entity\post
+    normalized: AppBundle\Entity\Post
+-
+    input:      AppBundle/Entity/Post
+    fqcn:       ~
+    normalized: AppBundle\Entity\Post
+#-
+#    input:      
+#    fqcn:       
+#    normalized: 

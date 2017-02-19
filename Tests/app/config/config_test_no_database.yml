@@ -1,0 +1,10 @@
+imports:
+    - { resource: config.yml }
+
+# Doctrine Configuration
+doctrine:
+    dbal:
+        host:     foo.bar
+        dbname:   foobar
+        user:     foo
+        password: bar

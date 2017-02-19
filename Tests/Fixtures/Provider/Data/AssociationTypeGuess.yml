@@ -1,0 +1,12 @@
+-
+    name: Comments
+    type: OneToMany
+-
+    name: Comment
+    type: ManyToOne
+-
+    name: Categories
+    type: OneToMany
+-
+    name: Category
+    type: ManyToOne
