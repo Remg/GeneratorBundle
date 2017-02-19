@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/Remg/GeneratorBundle.svg?branch=master)](https://travis-ci.org/Remg/GeneratorBundle)
 [![Test Coverage](https://codeclimate.com/github/Remg/GeneratorBundle/badges/coverage.svg)](https://codeclimate.com/github/Remg/GeneratorBundle/coverage)
-[![SensioLabsInsight](https://insight.sensiolabs.com/projects/a4d684cf-28ab-4ef6-b80d-183e907ee8e5/mini.png)](https://insight.sensiolabs.com/projects/a4d684cf-28ab-4ef6-b80d-183e907ee8e5)
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/be1eac25-1aba-4fc3-8ddc-c59124425955/mini.png)](https://insight.sensiolabs.com/projects/be1eac25-1aba-4fc3-8ddc-c59124425955)
 
 ## Introduction
 
