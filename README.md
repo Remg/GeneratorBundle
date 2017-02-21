@@ -31,14 +31,17 @@ by other entities.
 
 #### Configuration formats
 
-* Handles all [Doctrine2 metadata drivers](http://docs.doctrine-project.org/projects/doctrine-orm/en/latest/reference/metadata-drivers.html) (annotations, yaml, xml, php).
+* Handles all [Doctrine2 metadata drivers](http://docs.doctrine-project.org/projects/doctrine-orm/en/latest/reference/metadata-drivers.html)
+(annotations, yaml, xml, php).
 
 ### 2. Entity re-generation
 
-The bundle provides a command that will start an entity generation from the mappping informations of an existing entity.
-It is then possible to edit or add fields and associations before regenerate the entity from scratch.
+The bundle provides a command that will start an entity generation from the
+mappping informations of an existing entity. It is then possible to edit or add
+fields and associations before the entity is regenerated from scratch.
 
-This same command can be used to regenerate an entity in a different mapping configuration format.
+This same command can be used to regenerate an entity in a different mapping
+configuration format.
 
 ## Installation
 
@@ -58,9 +61,10 @@ documentation.
 
 ### Step 2: Enable the bundle
 
-Then, enable the bundle by adding *new Remg\GeneratorBundle\RemgGeneratorBundle()* 
-to the list of registered bundles for the **dev** environment in the 
-`app/AppKernel.php` file of your project:
+Then, enable the bundle by adding
+*new Remg\GeneratorBundle\RemgGeneratorBundle()* to the list of registered
+bundles for the **dev** environment in the `app/AppKernel.php` file of your
+project:
 
 ```php
 // app/AppKernel.php
@@ -82,7 +86,8 @@ class AppKernel extends Kernel
 
 ### Step 3: Configure the bundle
 
-The bundle comes with a default configuration, which is listed below. You can define these options in your configuration if you need to change them:
+The bundle comes with a default configuration, which is listed below. You can
+define these options in your configuration if you need to change them:
 
 ```yaml
 remg_generator:
@@ -91,7 +96,9 @@ remg_generator:
         configuration_format: annotation
 ```
 
-Since this bundle is only useful in command line interface, you can override the bundle configuration in your development configuration in `app/config/config_dev.yml`.
+Since this bundle is only useful in command line interface, you can override the
+bundle configuration in your development configuration in
+`app/config/config_dev.yml`.
 
 ## Usage
 
@@ -107,12 +114,17 @@ You can also regenerate Doctrine2 entities from scratch using the command below:
 $ php bin/console remg:regenerate:entity
 ```
 
-**NOTE:** Since this bundle can only generate code, and not manipulate existing code, this command will regenerate the entity from scratch without implementing any custom code that could live in the existing entity.
-**No code can be lost. Each file generation checks if the target file already exists, and creates a timestamped backup of the file before generation.**
+**NOTE:** Since this bundle can only generate code, and not manipulate existing
+code, this command will regenerate the entity from scratch without implementing
+any custom code that could live in the existing entity.
+
+**No code can be lost. Each file generation checks if the target file already
+exists, and creates a timestamped backup of the file before generation.**
 
 ## Under development
 
 * Repository generation.
+* Entity edition.
 * CRUD generation (handling embed form collections).
 
 ## License
